@@ -1,0 +1,81 @@
+import java.util.*;
+import java.io.*;
+
+
+class ThreadWrite implements Runnable
+{
+	public static void main(String[] args) throws IOException,FileNotFoundException
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the sentence");
+		String str=s.nextLine();
+		FileOutputStream fout= new FileOutputStream("D:\\chethan\\QCCO1\\Testyantra Activity\\Filehandling\\file3.txt");
+		System.out.println("file is successfully created");
+
+		ThreadWrite(String s)
+		{
+			super(s);
+		}
+		
+		public static void write(){
+		for (int i=0;i<str.length();i++)
+		{
+			fout.write(str.charAt(i));
+		}
+		}
+		fout.close();
+	}
+}
+
+class ThreadRead extends Thread
+{
+	public static void main(String[] args) throws IOException,FileNotFoundException
+	{
+		FileInputStream fin= new FileInputStream("D:\\chethan\\QCCO1\\Testyantra Activity\\Filehandling\\File1.java");
+		int a=fin.available();// checks no of character avaliable
+		System.out.println(a);
+		System.out.println();
+
+		ThreadRead(String s)
+		{
+			super(s);
+		}
+
+		public static void read(){
+		for (int i=0;i<a;i++)
+		{
+			try
+		{
+			int b=fin.read();
+			Thread.sleep(3000);//thread.sleep exception is handled in try block
+			System.out.print((char)b);
+		}
+		catch (Exception e)
+		{
+			System.out.println("Exception is handled");
+		}
+
+		}
+	}
+		fin.close();
+		//System.out.print("Done.............");
+	}
+}
+
+class Driver
+{
+	public static void main(String[] args) 
+	{
+		Thread t1=new Thread(new ThreadWrite());
+		ThreadRead tr=new ThreadRead();
+		
+		tw.start();
+		System.out.println(tw.getName());//Thread-0
+		tw.write();
+
+		tr.start();
+		System.out.println(tr.getName());//Thread-1
+		tr.read();
+		
+	}
+}

@@ -1,0 +1,17 @@
+class Driver 
+{
+	public static void main(String[] args) 
+	{
+		Employee e1=new Employee();
+		Employee e2=new Employee();
+		Employee e3=new Employee();
+
+		e1.toSetAttribute(100, "ABC", 25,000.00d);
+		e2.toSetAttribute(101, "DEF", 20,000.00d);
+		e3.toSetAttribute(100, "GHI", 15,000.00d);
+		
+		e1.toPrintAttribute();
+		e2.toPrintAttribute();
+		e3.toPrintAttribute();
+	}
+}

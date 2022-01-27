@@ -1,0 +1,36 @@
+class Method 
+{
+	int a=20;
+	static int b=40;
+
+	public void demo()
+	{
+		System.out.println("demo()");
+	}
+
+	public void demo1()
+	{
+		System.out.println("demo1()");
+	}
+
+	public static void temp()
+	{
+		System.out.println("temp()");
+	}
+
+	public static void main(String[] args) 
+	{
+		Method m=new Method();
+		System.out.println(b);
+		System.out.println(a);
+		
+		demo();
+		demo1();
+		temp();
+
+		m.demo();
+		m.demo1();
+		m.temp();
+		
+	}
+}

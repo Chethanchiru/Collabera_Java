@@ -1,0 +1,22 @@
+ class Test1
+{
+	public static void demo()
+	{
+		System.out.println("from final test");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}
+
+
+final class Driver1 extends Test1 //Driver.java:14: error: cannot inherit from final Test
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+		Test1.demo();
+	}
+
+}

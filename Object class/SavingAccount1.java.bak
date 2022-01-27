@@ -1,0 +1,25 @@
+class SavingAccount1 
+{
+	String name;
+
+	SavingAccount() {}
+
+	SavingAccount(String name) 
+	{
+		this.name=name;
+	}
+
+	@Override
+	public String toString()
+	{
+		return "name : = " +name;
+	}
+
+	public static void main(String[] args) 
+	{
+		
+		SavingAccount s2=new SavingAccount("Edward");
+		System.out.println(s2);
+
+	}
+}

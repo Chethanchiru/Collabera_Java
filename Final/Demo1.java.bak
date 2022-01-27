@@ -1,0 +1,19 @@
+class Demo1
+{
+	final int a;
+	Demo1()
+	{
+		a=20;
+	}
+
+	final static int b;
+
+
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}
+
+

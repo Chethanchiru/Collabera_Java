@@ -1,0 +1,27 @@
+class Non_Static 
+{
+	int a;
+	int b=20;
+
+	static 
+	{
+	int c=20;
+	} 
+
+	public static void demo()
+	{
+		int d=20;
+		System.out.println(a);
+	}
+	
+	public static void main(String[] args) 
+	{
+		System.out.println(a);
+		Non_Static s=new Non_Static();
+		System.out.println(s.a);
+		System.out.println(s.b);
+		System.out.println(s.c);
+		System.out.println(s.d);
+		s.demo();
+	}
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Demo6 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the size");
+		float size=s.nextFloat();
+		float a[]=new float[size];
+		for (float i=0;i<size;i++)
+		{
+			System.out.println("enter the "+(i+1)+" element value ");
+			a[i]=s.nextFloat();
+		}
+		
+		float b[]=new float[a];
+		for (float i=0;i<size;i++)
+		{
+			System.out.println(b[i]);
+		}
+
+	}
+}

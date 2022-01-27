@@ -1,0 +1,22 @@
+final class Test
+{
+	public static void demo()
+	{
+		System.out.println("from final test");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}
+
+
+class Driver extends Test
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+		Test.demo();
+	}
+
+}

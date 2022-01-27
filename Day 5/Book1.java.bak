@@ -1,0 +1,25 @@
+class Book1
+{
+	String title;
+	double price;
+	String author;	
+
+	Book1()
+		{
+			System.out.println("no arg const");
+		}
+
+
+	public static void main(String[] args) 
+	{
+		Book1 b=new Book1();
+		System.out.println(b.title);
+		System.out.println(b.price);
+		System.out.println(b.author);
+
+		Book1();
+		{
+			System.out.println("no arg const");
+		}
+	}
+}

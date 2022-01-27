@@ -1,0 +1,59 @@
+class A
+{
+	 void test()
+	{
+		System.out.println("A");
+	}	
+} 
+
+class B extends A
+{
+	protected void test()
+	{
+		System.out.println("B");
+	}	
+} 
+	
+class C extends B
+{
+	public void test()
+	{
+		System.out.println("C");
+	}	
+} 
+
+class Driver6
+{
+	public static void main(String[] args) 
+	{
+		A a=new A();
+		a.test();
+		
+		A a1=new B();
+		a1.test();
+		
+		A a2=new C();
+		a2.test();
+
+		B b=new A();
+		b.test();
+		
+		B b1=new B();
+		b1.test();
+		
+		B b2=new C();
+		b2.test();
+
+		C c=new A();
+		c.test();
+		
+		C c1=new B();
+		c1.test();
+		
+		C c2=new C();
+		c2.test();
+	}
+}
+
+
+

@@ -1,0 +1,18 @@
+//wajp to store fruits and print the index of it
+import java.util.*;
+class Sentence
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the sentence");
+		String sentence1=s.nextLine().trim();
+		HashSet hs= new HashSet();
+				hs.add(sentence1);
+			/*if (hs.add(sentence1))
+			{*/
+				hs.remove(sentence1);
+			//}
+			System.out.println(hs);		
+	}
+}

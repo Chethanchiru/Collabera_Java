@@ -1,0 +1,20 @@
+
+import java.util.*;
+class Tree
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the inte");
+		int integer=s.nextInt();
+		HashSet hs= new HashSet();
+
+		for (int i=0;i>integer;i++ )
+		{
+			hs.add(s.nextInt());
+		}
+			System.out.println(hs);	
+			//TreeSet ts=hs.TreeSet();
+			//System.out.println(hs);	
+	}
+}
